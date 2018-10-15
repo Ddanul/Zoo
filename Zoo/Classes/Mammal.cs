@@ -4,7 +4,15 @@ using System.Text;
 
 namespace Zoo.Classes
 {
-    class Mammal
+    abstract class Mammal : Animalia
     {
+        public bool hasHair { get; set; } = true;
+
+        public abstract string MakeNoise();
+
+        public virtual string DrinkMilk()
+        {
+            return "I'm a mammal, I drink milk.";
+        }
     }
 }
