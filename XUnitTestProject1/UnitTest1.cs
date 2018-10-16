@@ -83,5 +83,83 @@ namespace XUnitTestProject1
             //Assert
             Assert.Equal(2, t2.NumberOfEyes);
         }
+
+        [Fact]
+        public void SnakeHasYellowScales()
+        {
+            //Arrange
+            Snake s1 = new Snake()
+            {
+                Name = "sssam"
+            };
+
+            //Assert
+            Assert.Equal("yellow", s1.ScaleColor);
+        }
+
+        [Fact]
+        public void SnakeHisses()
+        {
+            //Arrange
+            Snake s2 = new Snake()
+            {
+                Name = "ssstephen"
+            };
+
+            //Assert
+            Assert.Equal("Hisssss", s2.MakeNoise());
+        }
+
+        [Fact]
+        public void SalamanderEmitsToxins()
+        {
+            //Arrange
+            Salamander sa1 = new Salamander()
+            {
+                Name = "gecko"
+            };
+
+            //Assert
+            Assert.Equal("I am releasing toxins from my skin!And I am a salamander...", sa1.EmitToxin());
+        }
+
+        [Fact]
+        public void SalamanderBreathesWater()
+        {
+            //Arrange
+            Salamander sa2= new Salamander()
+            {
+                Name = "chicken"
+            };
+
+            //Assert
+            Assert.Equal("Croak", sa2.MakeNoise());
+        }
+
+        [Fact]
+        public void FrogReleasesToxins()
+        {
+            //Arrange
+            Frog f1 = new Frog()
+            {
+                Name = "Frank"
+            };
+
+            //Assert
+            Assert.Equal("I am releasing toxins from my skin!", f1.EmitToxin());
+        }
+
+        [Fact]
+        public void FrogReturnsName()
+        {
+            //Arrange
+            Frog f2 = new Frog()
+            {
+                Name = "Skip"
+            };
+
+            //Assert
+            Assert.Equal("Skip", f2.Name);
+        }
     }
 }
