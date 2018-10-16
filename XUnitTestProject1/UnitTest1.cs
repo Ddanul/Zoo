@@ -161,5 +161,18 @@ namespace XUnitTestProject1
             //Assert
             Assert.Equal("Skip", f2.Name);
         }
+
+        [Fact]
+        public void FrogIsAnAnimal()
+        {
+            //Arrange
+            Frog f3 = new Frog()
+            {
+                Name = "Animal"
+            };
+
+            //Assert
+            Assert.True(f3 is Animalia);
+        }
     }
 }
