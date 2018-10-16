@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Zoo.Classes
+namespace Zoo.Interfaces
 {
-    class Koala
+    interface ISwim
     {
+        string Swim();
     }
 }

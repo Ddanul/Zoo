@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Zoo.Classes
+namespace Zoo.Interfaces
 {
-    class Marsupial
+    interface ILayEggs
     {
+        string LayEgg();
     }
 }

@@ -4,7 +4,13 @@ using System.Text;
 
 namespace Zoo.Classes
 {
-    class Mammal
+    public abstract class Mammal : Animalia
     {
+        abstract public string FurType { get; set; }
+
+        public void BreatheAir()
+        {
+            Console.WriteLine("I love breathing fresh air!");
+        }
     }
 }
