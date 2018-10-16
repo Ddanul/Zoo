@@ -6,13 +6,11 @@ namespace Zoo.Classes
 {
     abstract class Mammal : Animalia
     {
-        public bool hasHair { get; set; } = true;
+        abstract public string FurType { get; set; }
 
-        public abstract string MakeNoise();
-
-        public virtual string DrinkMilk()
+        public void BreatheAir()
         {
-            return "I'm a mammal, I drink milk.";
+            Console.WriteLine("I love breathing fresh air!");
         }
     }
 }

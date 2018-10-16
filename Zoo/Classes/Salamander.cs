@@ -4,8 +4,13 @@ using System.Text;
 
 namespace Zoo.Classes
 {
-    class Salamander
+    class Salamander : Amphibian
     {
+        public override string Name { get; set; }
 
+        public override string EmitToxin()
+        {
+            return base.EmitToxin() + "And I am a salamander...";
+        }
     }
 }

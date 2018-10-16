@@ -4,7 +4,11 @@ using System.Text;
 
 namespace Zoo.Classes
 {
-    class Monotreme
+    abstract class Monotreme : Mammal
     {
+        public virtual string billType { get; set; } = "duck bill";
+        
+        public abstract void ProduceVenom();
+          
     }
 }

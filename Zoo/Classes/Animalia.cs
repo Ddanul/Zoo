@@ -6,6 +6,9 @@ namespace Zoo.Classes
 {
     abstract class Animalia
     {
-        public int Name { get; set; }
+        public abstract string Name { get; set; }
+        public virtual int NumberOfEyes { get; set; } = 2;
+
+        public abstract string MakeNoise();
     }
 }

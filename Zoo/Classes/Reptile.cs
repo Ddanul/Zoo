@@ -4,7 +4,13 @@ using System.Text;
 
 namespace Zoo.Classes
 {
-    class Reptile
+    abstract class Reptile : Animalia
     {
+        public virtual string ScaleColor { get; set; } = "Green";
+
+        public override string MakeNoise()
+        {
+            return "Hisssss";
+        }
     }
 }
