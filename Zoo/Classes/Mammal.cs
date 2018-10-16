@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Zoo.Classes
 {
-    abstract class Mammal : Animalia
+    public abstract class Mammal : Animalia
     {
         abstract public string FurType { get; set; }
 

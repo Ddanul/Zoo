@@ -9,6 +9,8 @@ namespace Zoo
         {
             Console.WriteLine("Hello World!");
             MammalCalls();
+            ReptileCalls();
+            AmphibianCalls();
         }
 
         static void MammalCalls()
@@ -45,6 +47,22 @@ namespace Zoo
 
             bob.LayEgg();
 
+        }
+
+        static void AmphibianCalls()
+        {
+            Salamander newt = new Salamander()
+            {
+                Name = "Newton"
+            };
+
+            Frog toad = new Frog()
+            {
+                Name = "Toad"
+            };
+
+            Console.WriteLine($"Careful with the salamander: {newt.EmitToxin()}");
+            Console.WriteLine($"The frog goes like this: toad.LayEgg()");
         }
     }
 }

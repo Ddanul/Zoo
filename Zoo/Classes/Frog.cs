@@ -5,7 +5,7 @@ using Zoo.Interfaces;
 
 namespace Zoo.Classes
 {
-    class Frog : Amphibian, ILayEggs
+    public class Frog : Amphibian, ILayEggs
     {
         public override string Name { get; set; }
 

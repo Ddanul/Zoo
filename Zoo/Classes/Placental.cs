@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Zoo.Classes
 {
-    abstract class Placental : Mammal
+    public abstract class Placental : Mammal
     {
         public virtual string HasTail()
         {

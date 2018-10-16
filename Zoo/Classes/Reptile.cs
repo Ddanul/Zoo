@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Zoo.Classes
 {
-    abstract class Reptile : Animalia
+    public abstract class Reptile : Animalia
     {
         public virtual string ScaleColor { get; set; } = "Green";
 

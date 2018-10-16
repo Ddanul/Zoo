@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Zoo.Classes
 {
-    class Salamander : Amphibian
+    public class Salamander : Amphibian
     {
         public override string Name { get; set; }
 

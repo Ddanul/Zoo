@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Zoo.Classes
 {
-    abstract class Amphibian : Animalia
+    public abstract class Amphibian : Animalia
     {
         public override string MakeNoise()
         {

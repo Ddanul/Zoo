@@ -5,7 +5,7 @@ using Zoo.Interfaces;
 
 namespace Zoo.Classes
 {
-    class Platypus : Monotreme, ILayEggs
+    public class Platypus : Monotreme, ILayEggs
     {
         public override string FurType { get; set; } = "dense";
         public override string Name { get; set; }
